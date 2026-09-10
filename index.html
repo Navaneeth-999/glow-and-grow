@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glow &amp; Grow | Botanical Hair Care &amp; Nourishment</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="#" class="brand-logo">Glow <span>&amp;</span> Grow</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link">Home</a></li>
+          <li><a href="#benefits" class="nav-link">Benefits</a></li>
+          <li><a href="#products" class="nav-link">Shop</a></li>
+          <li><a href="#experts" class="nav-link">Specialists</a></li>
+          <li><a href="#story" class="nav-link">About</a></li>
+          <li><a href="#community-poll" class="nav-link">Reviews &amp; Poll</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn" id="cartBtn">Cart <span id="cartCount">0</span></button>
+        <a href="#products" class="btn btn-primary">Shop Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1>Nourish Your Roots, <em>Unleash</em> Your Glow.</h1>
+        <p class="hero-description">
+          Organic botanical formulas formulated to restore hair density, silky smoothness, and luminous shine from root to tip.
+        </p>
+        <div class="hero-cta-group">
+          <a href="#products" class="btn btn-primary">Explore Ritual</a>
+          <a href="#benefits" class="btn btn-outline">Why Glow &amp; Grow</a>
+        </div>
+        <div class="hero-badge-strip">
+          <span>🌿 100% Vegan &amp; Cruelty-Free</span>
+          <span>✨ Sulfate &amp; Paraben Free</span>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <img src="assets/images/hero-hair.jpg" alt="Luscious glowing healthy hair" class="hero-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Glow Check (Quick Diagnostic Quiz) -->
+  <section class="glow-check-section" id="glow-check">
+    <div class="container">
+      <div class="glow-check-card">
+        <span class="section-tag">Instant Diagnostic</span>
+        <h2>What does your hair need today?</h2>
+        <p class="glow-check-sub">Select your primary concern to reveal your personalized botanical match:</p>
+        
+        <div class="glow-check-buttons">
+          <button class="quiz-btn active" data-result="✨ For Luminous Shine: Use our Nourishing Shampoo + Camellia Conditioner for instant light reflection.">Hydration &amp; Shine</button>
+          <button class="quiz-btn" data-result="🌿 For Follicle Strength: Apply 4 drops of Hair Growth Serum directly to scalp every night.">Growth &amp; Density</button>
+          <button class="quiz-btn" data-result="💧 For Frizz Control: Detangle damp strands with Hydrating Conditioner and rinse with cool water.">Frizz &amp; Repair</button>
+        </div>
+
+        <div class="glow-check-result" id="quizResult">
+          ✨ For Luminous Shine: Use our Nourishing Shampoo + Camellia Conditioner for instant light reflection.
+        </div>
+
+        <div class="glow-counter" id="glowCounter">
+          <span class="pulse-dot"></span> <span id="liveCount">142</span> people discovering their ritual today
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits Section -->
+  <section class="features-section" id="benefits">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Pure Formulation</span>
+        <h2 class="section-title">The Science of Natural Radiance</h2>
+        <p class="section-subtitle">Crafted with potent active botanicals that work in harmony with your scalp's natural rhythm.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <img src="assets/icons/shine.svg" alt="Luminous Shine Icon">
+          </div>
+          <h3>Luminous Shine</h3>
+          <p>Micro-nutrients seal the hair cuticle to reflect natural light and protect against environmental dullness.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <img src="assets/icons/smooth.svg" alt="Silky Smooth Icon">
+          </div>
+          <h3>Silky Smoothness</h3>
+          <p>Tames frizz and locks in essential hydration for touchably soft strands that flow effortlessly.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-wrapper">
+            <img src="assets/icons/healthy.svg" alt="Healthy Follicle Icon">
+          </div>
+          <h3>Healthy Follicles</h3>
+          <p>Feeds your scalp vital peptides and antioxidants to stimulate stronger, fuller hair development.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Showcase -->
+  <section class="products-section" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Botanical Apothecary Collection</span>
+        <h2 class="section-title">Formulas For Everyday Renewal</h2>
+        <p class="section-subtitle">Explore our 14 clean, clinical botanicals formulated to nourish hair follicles, restore cuticles, and elevate your daily ritual.</p>
+      </div>
+
+      <!-- Exploration & Discovery Toolbar -->
+      <div class="exploration-toolbar">
+        <div class="search-wrap">
+          <svg class="search-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          <input type="text" id="productSearchInput" placeholder="Search formulas, ingredients (e.g. rosemary, biotin, mask, argan)..." autocomplete="off">
+          <button id="clearSearchBtn" class="clear-search-btn" style="display: none;">&times;</button>
+        </div>
+
+        <div class="sort-wrap">
+          <label for="productSortSelect">Sort by:</label>
+          <select id="productSortSelect">
+            <option value="featured">Featured &amp; Best Sellers</option>
+            <option value="price-asc">Price: Low to High</option>
+            <option value="price-desc">Price: High to Low</option>
+            <option value="rating">Top Customer Rated</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="category-filter-strip">
+        <button class="category-pill active" data-category="all">All Formulas <span class="pill-badge" id="countAll">14</span></button>
+        <button class="category-pill" data-category="cleanse">Cleanse &amp; Condition <span class="pill-badge" id="countCleanse">4</span></button>
+        <button class="category-pill" data-category="treatments">Treatments &amp; Masks <span class="pill-badge" id="countTreatments">4</span></button>
+        <button class="category-pill" data-category="leavein">Leave-in &amp; Mists <span class="pill-badge" id="countLeavein">4</span></button>
+        <button class="category-pill" data-category="tools">Ritual Tools <span class="pill-badge" id="countTools">2</span></button>
+      </div>
+
+      <!-- Products Grid (Rendered dynamically via JS) -->
+      <div class="products-grid" id="productsGrid">
+        <!-- Injected via JavaScript -->
+      </div>
+
+      <!-- Zero Results State -->
+      <div class="no-products-found" id="noProductsFound" style="display: none;">
+        <div class="empty-icon">🔍</div>
+        <h3>No matching botanical formulas found</h3>
+        <p>Try clearing your search term or selecting "All Formulas" to explore our full ritual catalog.</p>
+        <button class="btn btn-outline btn-sm" id="resetFiltersBtn">Reset All Filters</button>
+      </div>
+    </div>
+  </section>
+
+  
+  <!-- Beauticians, Hair Specialists & Routine Analysts Section -->
+  <section class="experts-section" id="experts">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Clinical Expertise &amp; Hair Analysis</span>
+        <h2 class="section-title">Meet Our Certified Hair Specialists &amp; Beauticians</h2>
+        <p class="section-subtitle">Consult with our in-house clinical trichologists, master texture stylists, and botanical analysts for customized routine guidance and diagnostic scalp analysis.</p>
+      </div>
+
+      <!-- 3 Beautician Specialist Cards -->
+      <div class="experts-grid">
+        <!-- Expert 1: Dr. Elena Rostova -->
+        <div class="expert-card">
+          <div class="expert-image-wrap">
+            <img src="images/expert-1.jpg" alt="Dr. Elena Rostova - Clinical Trichologist" class="expert-photo">
+            <span class="expert-badge">Clinical Trichologist</span>
+          </div>
+          <div class="expert-content">
+            <h3 class="expert-name">Dr. Elena Rostova, MD</h3>
+            <span class="expert-role">Head Trichologist &amp; Scalp Biologist</span>
+            <span class="expert-cred">14+ Years Clinical Experience • Board Certified IAT</span>
+            <p class="expert-quote">"Hair vitality starts underneath the surface. When you feed follicles cold-pressed plant lipids and clinical peptides, hair reaches peak density."</p>
+
+            <div class="expert-routine-box">
+              <span class="routine-box-label">Elena's Signature Protocol:</span>
+              <strong>Follicle Density &amp; Growth Ritual</strong>
+              <p>Rosemary Scalp Oil pre-wash + nightly Biotin Peptide Serum massage.</p>
+            </div>
+
+            <div class="expert-card-footer">
+              <button class="btn btn-primary btn-sm book-consult-btn" data-expert="Dr. Elena Rostova">Book Free Consultation</button>
+              <button class="btn btn-outline btn-sm routine-view-btn" data-protocol="growth">View Protocol</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expert 2: Camille Laurent -->
+        <div class="expert-card">
+          <div class="expert-image-wrap">
+            <img src="images/expert-2.jpg" alt="Camille Laurent - Master Texture Stylist" class="expert-photo">
+            <span class="expert-badge">Master Texture Stylist</span>
+          </div>
+          <div class="expert-content">
+            <h3 class="expert-name">Camille Laurent</h3>
+            <span class="expert-role">Lead Hair Stylist &amp; Texture Analyst</span>
+            <span class="expert-cred">11+ Years Editorial &amp; Salon • Paris &amp; NYC</span>
+            <p class="expert-quote">"Texture isn't a problem to be tamed—it's a pattern to celebrate. Proper cuticle sealing with botanical milk delivers touchable, frizz-free movement."</p>
+
+            <div class="expert-routine-box">
+              <span class="routine-box-label">Camille's Signature Protocol:</span>
+              <strong>Ultra-Gloss &amp; Anti-Frizz Ritual</strong>
+              <p>Gentle Co-Wash + Avocado Deep Moisture Mask + Smoothing Milk finish.</p>
+            </div>
+
+            <div class="expert-card-footer">
+              <button class="btn btn-primary btn-sm book-consult-btn" data-expert="Camille Laurent">Book Free Consultation</button>
+              <button class="btn btn-outline btn-sm routine-view-btn" data-protocol="frizz">View Protocol</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Expert 3: Aria Chen -->
+        <div class="expert-card">
+          <div class="expert-image-wrap">
+            <img src="images/expert-3.jpg" alt="Aria Chen - Phytochemistry Lead" class="expert-photo">
+            <span class="expert-badge">Phytochemistry Lead</span>
+          </div>
+          <div class="expert-content">
+            <h3 class="expert-name">Aria Chen, L.Ac</h3>
+            <span class="expert-role">Holistic Hair Herbalist &amp; Formulator</span>
+            <span class="expert-cred">9+ Years Botanical Extraction • Scalp Acupuncturist</span>
+            <p class="expert-quote">"The scalp microbiome requires harmony, not harsh detergents. Fermented botanicals and pure floral hydrosols restore natural pH for mirror-like shine."</p>
+
+            <div class="expert-routine-box">
+              <span class="routine-box-label">Aria's Signature Protocol:</span>
+              <strong>Scalp Detox &amp; High-Gloss Ritual</strong>
+              <p>Clarifying Herbal Rinse detox + Pure Moroccan Argan Gloss Drops.</p>
+            </div>
+
+            <div class="expert-card-footer">
+              <button class="btn btn-primary btn-sm book-consult-btn" data-expert="Aria Chen">Book Free Consultation</button>
+              <button class="btn btn-outline btn-sm routine-view-btn" data-protocol="gloss">View Protocol</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Interactive Specialist Hair Analysis Protocol Builder -->
+      <div class="specialist-protocols-card" id="specialistProtocols">
+        <div class="protocol-header">
+          <div>
+            <span class="section-tag">Clinical Protocols</span>
+            <h3>Hair Analyst Routine Guide</h3>
+            <p>Select an expert-curated routine below to see step-by-step application order and formula synergies:</p>
+          </div>
+          <div class="protocol-tabs">
+            <button class="protocol-tab active" data-tab="growth">🌱 Growth &amp; Density</button>
+            <button class="protocol-tab" data-tab="frizz">✨ Anti-Frizz &amp; Curl</button>
+            <button class="protocol-tab" data-tab="gloss">💧 Scalp Detox &amp; Gloss</button>
+          </div>
+        </div>
+
+        <!-- Protocol Content Body -->
+        <div class="protocol-body" id="protocolBody">
+          <!-- Dynamically populated via JavaScript -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story / Model Section -->
+  <section class="story-section" id="story">
+    <div class="container story-grid">
+      <div>
+        <img src="assets/images/hair-model.jpg" alt="Model showing healthy hair" class="story-img">
+      </div>
+      <div class="story-content">
+        <span class="section-tag">Our Philosophy</span>
+        <h2>Hair Care Rooted In Intentional Living</h2>
+        <p>
+          At Glow &amp; Grow, we believe gorgeous hair begins with scalp wellness. We omit harsh chemicals, synthetic sulfates, and artificial fragrances in favor of cold-pressed botanicals and clean clinical actives.
+        </p>
+        <p>
+          Our three-step ritual has transformed thousands of hair journeys, providing lasting strength, touchable softness, and natural vitality.
+        </p>
+        <a href="#products" class="btn btn-primary">Start Your Routine</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  
+  <!-- Customer Review & Website Experience Poll Section -->
+  <section class="poll-section" id="community-poll">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Community Feedback &amp; Poll</span>
+        <h2 class="section-title">Help Us Perfect Your Ritual</h2>
+        <p class="section-subtitle">Cast your vote on our formulas and shopping experience. Your feedback directly shapes our next clean formulations!</p>
+      </div>
+
+      <div class="poll-grid">
+        <!-- Left: Interactive Poll & Review Form -->
+        <div class="poll-form-card">
+          <div id="pollFormContainer">
+            <h3>Share Your Experience</h3>
+            <p class="poll-desc">Rate your experience and tell us what clean products you want to see next.</p>
+
+            <form id="communityPollForm">
+              <!-- 1. Star Rating -->
+              <div class="poll-group">
+                <label class="poll-label">1. Overall Product &amp; Brand Satisfaction</label>
+                <div class="star-rating" id="starRatingGroup">
+                  <span class="star-btn active" data-rating="1">★</span>
+                  <span class="star-btn active" data-rating="2">★</span>
+                  <span class="star-btn active" data-rating="3">★</span>
+                  <span class="star-btn active" data-rating="4">★</span>
+                  <span class="star-btn active" data-rating="5">★</span>
+                  <span class="rating-caption" id="ratingCaption">5.0 - Exceptional</span>
+                </div>
+                <input type="hidden" id="selectedRating" value="5">
+              </div>
+
+              <!-- 2. Website & Ordering Process Rating -->
+              <div class="poll-group">
+                <label class="poll-label">2. How was your shopping &amp; navigation experience?</label>
+                <div class="poll-pill-group">
+                  <label class="poll-pill-option">
+                    <input type="radio" name="siteExperience" value="Super smooth & intuitive" checked>
+                    <span>⚡ Super Smooth &amp; Fast</span>
+                  </label>
+                  <label class="poll-pill-option">
+                    <input type="radio" name="siteExperience" value="Clean & easy to explore">
+                    <span>✨ Clean &amp; Inspiring</span>
+                  </label>
+                  <label class="poll-pill-option">
+                    <input type="radio" name="siteExperience" value="Needs more features">
+                    <span>💡 Needs More Features</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- 3. Hair Profile -->
+              <div class="poll-group">
+                <label class="poll-label">3. What is your hair texture?</label>
+                <div class="poll-pill-group">
+                  <label class="poll-pill-option">
+                    <input type="radio" name="hairProfile" value="Straight" checked>
+                    <span>Straight</span>
+                  </label>
+                  <label class="poll-pill-option">
+                    <input type="radio" name="hairProfile" value="Wavy">
+                    <span>Wavy</span>
+                  </label>
+                  <label class="poll-pill-option">
+                    <input type="radio" name="hairProfile" value="Curly">
+                    <span>Curly</span>
+                  </label>
+                  <label class="poll-pill-option">
+                    <input type="radio" name="hairProfile" value="Coily">
+                    <span>Coily</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- 4. Next Product Feature Vote -->
+              <div class="poll-group">
+                <label class="poll-label">4. Which new formula should we release next? (Poll Vote)</label>
+                <div class="poll-pill-group">
+                  <label class="poll-pill-option">
+                    <input type="radio" name="nextProductVote" value="mask" checked>
+                    <span>🥑 Deep Moisture Hair Mask</span>
+                  </label>
+                  <label class="poll-pill-option">
+                    <input type="radio" name="nextProductVote" value="scrub">
+                    <span>🍃 Scalp Detox Scrub</span>
+                  </label>
+                  <label class="poll-pill-option">
+                    <input type="radio" name="nextProductVote" value="mist">
+                    <span>🛡️ Heat Protectant Mist</span>
+                  </label>
+                  <label class="poll-pill-option">
+                    <input type="radio" name="nextProductVote" value="milk">
+                    <span>🥛 Leave-in Smoothing Milk</span>
+                  </label>
+                </div>
+              </div>
+
+              <!-- 5. Feedback Comment -->
+              <div class="poll-group">
+                <label class="poll-label" for="pollFeedback">5. Your Feedback &amp; Review (Optional)</label>
+                <textarea id="pollFeedback" rows="3" class="poll-textarea" placeholder="What did you love most about the products or the site? Any features you'd like us to add?"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary poll-submit-btn">Submit Review &amp; Get 10% Off</button>
+            </form>
+          </div>
+
+          <!-- Success Box (Initially Hidden) -->
+          <div class="poll-success-box" id="pollSuccessBox" style="display: none;">
+            <div class="success-check-icon">✓</div>
+            <h3>Thank You for Your Review!</h3>
+            <p>Your vote has been counted in our community poll, and your review helps fellow hair wellness seekers.</p>
+            <div class="coupon-card">
+              <span class="coupon-label">Your 10% Off Discount Reward:</span>
+              <div class="coupon-code-wrap">
+                <code id="couponCode">GLOW10</code>
+                <button class="btn btn-sm btn-outline" id="copyCouponBtn" type="button">Copy Code</button>
+              </div>
+              <small class="coupon-terms">Use code GLOW10 at checkout on any order.</small>
+            </div>
+            <button class="btn btn-primary btn-sm" id="voteAgainBtn" type="button" style="margin-top: 1.25rem;">Submit Another Review</button>
+          </div>
+        </div>
+
+        <!-- Right: Live Community Poll Stats & Live Reviews -->
+        <div class="poll-stats-card">
+          <div class="stats-header">
+            <div class="stats-score-badge">
+              <span class="score-num">4.9</span>
+              <div class="score-stars">★★★★★</div>
+              <span class="score-count">based on <strong id="totalVotesCount">1,428</strong> verified reviews</span>
+            </div>
+          </div>
+
+          <!-- Live Voting Results -->
+          <div class="poll-progress-section">
+            <h4>Live Poll: Next Formula In Development</h4>
+            <p class="poll-sub-note">Real-time votes from hair wellness members:</p>
+
+            <div class="poll-stat-item">
+              <div class="poll-stat-labels">
+                <span>🥑 Deep Moisture Hair Mask</span>
+                <span id="pctMask">48% (<span id="countMask">685</span>)</span>
+              </div>
+              <div class="poll-bar-track">
+                <div class="poll-bar-fill" id="barMask" style="width: 48%;"></div>
+              </div>
+            </div>
+
+            <div class="poll-stat-item">
+              <div class="poll-stat-labels">
+                <span>🍃 Scalp Detox Scrub</span>
+                <span id="pctScrub">27% (<span id="countScrub">386</span>)</span>
+              </div>
+              <div class="poll-bar-track">
+                <div class="poll-bar-fill" id="barScrub" style="width: 27%;"></div>
+              </div>
+            </div>
+
+            <div class="poll-stat-item">
+              <div class="poll-stat-labels">
+                <span>🛡️ Heat Protectant Mist</span>
+                <span id="pctMist">16% (<span id="countMist">229</span>)</span>
+              </div>
+              <div class="poll-bar-track">
+                <div class="poll-bar-fill" id="barMist" style="width: 16%;"></div>
+              </div>
+            </div>
+
+            <div class="poll-stat-item">
+              <div class="poll-stat-labels">
+                <span>🥛 Leave-in Smoothing Milk</span>
+                <span id="pctMilk">9% (<span id="countMilk">128</span>)</span>
+              </div>
+              <div class="poll-bar-track">
+                <div class="poll-bar-fill" id="barMilk" style="width: 9%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Real Community Reviews Stream -->
+          <div class="recent-reviews-stream">
+            <h4>Community Reviews</h4>
+            <div id="reviewsStream">
+              <div class="review-mini-card">
+                <div class="review-mini-header">
+                  <strong>Clara M.</strong>
+                  <span class="review-badge">Verified Buyer • Wavy</span>
+                  <span class="review-rating">★★★★★</span>
+                </div>
+                <p>"The Nourishing Shampoo is a game changer! No stripping, pure gloss. Also loving how fast and smooth this website was to order from."</p>
+              </div>
+
+              <div class="review-mini-card">
+                <div class="review-mini-header">
+                  <strong>Maya K.</strong>
+                  <span class="review-badge">Verified Buyer • Curly</span>
+                  <span class="review-rating">★★★★★</span>
+                </div>
+                <p>"Hair Growth Serum transformed my thinning edges within 4 weeks. Can't wait for the Hair Mask vote to win!"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h4>Glow &amp; Grow</h4>
+        <p>Holistic, botanical-powered hair solutions crafted to nourish, revitalize, and elevate your hair care rituals.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#products">Shop Products</a></li>
+          <li><a href="#story">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Customer Care</h5>
+        <ul>
+          <li><a href="#">Shipping &amp; Returns</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Ingredients List</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Glow &amp; Grow. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Cart Backdrop & Slide-out Drawer -->
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping Cart">
+    <div class="cart-header">
+      <div class="cart-title-wrap">
+        <h3>Your Ritual Cart</h3>
+        <span class="cart-badge-pill" id="cartHeaderCount">0 items</span>
+      </div>
+      <button class="cart-close-btn" id="cartCloseBtn" aria-label="Close cart">&times;</button>
+    </div>
+
+    <!-- Free Shipping Progress Tracker -->
+    <div class="shipping-bar-box">
+      <p id="shippingMessage">Add $50.00 more for <strong>FREE Shipping</strong></p>
+      <div class="progress-track">
+        <div class="progress-fill" id="shippingFill" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <!-- Cart Items Scrollable List -->
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty" id="cartEmpty">
+        <div class="empty-icon">🌿</div>
+        <h4>Your ritual bag is empty</h4>
+        <p>Explore our botanical formulas and find your daily hair ritual.</p>
+        <button class="btn btn-primary btn-sm" id="cartShopBtn">Explore Products</button>
+      </div>
+    </div>
+
+    <!-- Cart Footer Summary -->
+    <div class="cart-footer" id="cartFooter">
+      <div class="cart-subtotal-row">
+        <span>Subtotal</span>
+        <span class="cart-subtotal-amount" id="cartSubtotal">$0.00</span>
+      </div>
+      <p class="cart-shipping-note">Free standard shipping applies on orders $50+</p>
+      <button class="btn btn-primary cart-checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  
+  <!-- Product Quick View Modal -->
+  <div class="quick-view-backdrop" id="quickViewBackdrop"></div>
+  <div class="quick-view-modal" id="quickViewModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="quick-view-close" id="quickViewCloseBtn" aria-label="Close modal">&times;</button>
+    <div class="quick-view-body" id="quickViewBody">
+      <!-- Injected dynamically via JS -->
+    </div>
+  </div>
+
+  <!-- Script -->
+  
+  <!-- Floating Hair Care Chatbot ("Ask Me for Your Hair Care") -->
+  <div class="chatbot-wrapper" id="chatbotWrapper">
+    <!-- Chat Launcher Button -->
+    <button class="chat-launcher-btn" id="chatLauncherBtn" aria-label="Open Hair Care Assistant">
+      <span class="chat-launcher-icon">🌿</span>
+      <span class="chat-launcher-text">Ask Me for Your Hair Care</span>
+      <span class="chat-pulse-dot"></span>
+    </button>
+
+    <!-- Chat Modal Window -->
+    <div class="chat-window" id="chatWindow">
+      <div class="chat-window-header">
+        <div class="chat-bot-info">
+          <div class="bot-avatar">🌿</div>
+          <div>
+            <h4>Glow Hair Advisor</h4>
+            <span class="bot-status"><span class="bot-status-dot"></span> Online &amp; Ready to Help</span>
+          </div>
+        </div>
+        <button class="chat-close-window-btn" id="chatCloseWindowBtn" aria-label="Close chat">&times;</button>
+      </div>
+
+      <!-- Messages Stream -->
+      <div class="chat-messages" id="chatMessages">
+        <!-- Initial Bot Welcome Message -->
+        <div class="chat-bubble bot-bubble">
+          <div class="bubble-content">
+            <p>Hello beautiful! 🌿 Welcome to <strong>Glow &amp; Grow</strong>. I am your personal botanical hair advisor.</p>
+            <p>Tell me about your hair goals or click a topic below to get an instant match:</p>
+          </div>
+        </div>
+
+        <!-- Quick Question Chips -->
+        <div class="chat-chips" id="chatChips">
+          <button class="chat-chip" data-query="How do I get maximum shine and silky smooth hair?">✨ Max Shine &amp; Smoothness</button>
+          <button class="chat-chip" data-query="Which product helps with hair growth and thinning roots?">🌱 Hair Growth &amp; Density</button>
+          <button class="chat-chip" data-query="My hair is dry, frizzy, and damaged. What should I use?">💧 Dry Ends &amp; Frizz Repair</button>
+          <button class="chat-chip" data-query="Can you recommend the complete 3-step ritual?">🧴 Complete 3-Step Ritual</button>
+        </div>
+      </div>
+
+      <!-- Input Area -->
+      <form class="chat-input-form" id="chatInputForm">
+        <input type="text" id="chatInput" placeholder="Ask about products, ingredients, routine..." autocomplete="off">
+        <button type="submit" class="chat-send-btn" id="chatSendBtn" aria-label="Send message">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+
+  <!-- Beautician Consultation Booking Modal -->
+  <div class="consult-modal-backdrop" id="consultBackdrop"></div>
+  <div class="consult-modal" id="consultModal" role="dialog" aria-modal="true">
+    <button class="consult-close-btn" id="consultCloseBtn" aria-label="Close modal">&times;</button>
+    
+    <div class="consult-modal-header">
+      <span class="section-tag">Complimentary 1-on-1 Session</span>
+      <h3>Book Your Virtual Hair Consultation</h3>
+      <p>Connect 1-on-1 with our certified trichologists and beauticians for scalp diagnosis and personalized routine advice.</p>
+    </div>
+
+    <form id="consultForm" class="consult-form">
+      <div class="form-row">
+        <div class="form-col">
+          <label for="consultSpecialist">Select Hair Specialist:</label>
+          <select id="consultSpecialist" required>
+            <option value="Dr. Elena Rostova (Trichologist & Scalp Biologist)">Dr. Elena Rostova — Trichologist &amp; Scalp Biologist</option>
+            <option value="Camille Laurent (Texture & Anti-Frizz Specialist)">Camille Laurent — Texture &amp; Anti-Frizz Specialist</option>
+            <option value="Aria Chen (Holistic Herbalist & Formulator)">Aria Chen — Holistic Herbalist &amp; Formulator</option>
+          </select>
+        </div>
+        <div class="form-col">
+          <label for="consultHairConcern">Primary Hair Concern:</label>
+          <select id="consultHairConcern" required>
+            <option value="Hair Thinning & Density Growth">Hair Thinning &amp; Density Growth</option>
+            <option value="Frizz, Breakage & Dryness">Frizz, Breakage &amp; Dryness</option>
+            <option value="Scalp Irritation, Flakes & Oiliness">Scalp Irritation, Flakes &amp; Oiliness</option>
+            <option value="Curl Definition & Porosity Balance">Curl Definition &amp; Porosity Balance</option>
+            <option value="Heat / Color Damage Repair">Heat / Color Damage Repair</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-col">
+          <label for="consultName">Your Full Name:</label>
+          <input type="text" id="consultName" placeholder="e.g. Maya Jenkins" required>
+        </div>
+        <div class="form-col">
+          <label for="consultEmail">Your Email Address:</label>
+          <input type="email" id="consultEmail" placeholder="e.g. maya@example.com" required>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="form-col">
+          <label for="consultDate">Preferred Date:</label>
+          <input type="date" id="consultDate" required>
+        </div>
+        <div class="form-col">
+          <label for="consultTime">Preferred Time Slot:</label>
+          <select id="consultTime" required>
+            <option value="10:00 AM EST">10:00 AM EST</option>
+            <option value="1:30 PM EST">1:30 PM EST</option>
+            <option value="4:00 PM EST">4:00 PM EST</option>
+            <option value="6:30 PM EST">6:30 PM EST</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-group" style="margin-bottom: 1.25rem;">
+        <label for="consultNotes">Tell Us About Your Current Routine &amp; Goals (Optional):</label>
+        <textarea id="consultNotes" rows="3" placeholder="Describe your washing schedule, products currently used, or specific concerns..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1rem;">Confirm Free 15-Min Video Consultation</button>
+    </form>
+
+    <div class="consult-success-box" id="consultSuccessBox" style="display: none;">
+      <div class="success-check-icon">✓</div>
+      <h3>Consultation Confirmed!</h3>
+      <p id="consultConfirmText">We have scheduled your virtual consultation. A calendar invitation with video link has been prepared.</p>
+      <div class="consult-summary-card" id="consultSummaryCard"></div>
+      <button class="btn btn-primary btn-sm" id="closeConsultSuccessBtn" style="margin-top: 1rem;">Done</button>
+    </div>
+  </div>
+
+</body>
+</html>
